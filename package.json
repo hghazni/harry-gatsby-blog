@@ -29,6 +29,9 @@
     "react-icons": "^3.7.0"
   },
   "devDependencies": {
+    "gatsby-plugin-react-css-modules": "^3.13.0",
+    "postcss": "^8.2.7",
+    "postcss-scss": "^4.0.0",
     "prettier": "^1.18.2"
   },
   "keywords": [
