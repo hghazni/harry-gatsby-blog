@@ -1,8 +1,8 @@
 const path = require(`path`)
 
 const author = {
-  firstname: "Gatsby",
-  lastname: "framework",
+  firstname: "Harry",
+  lastname: "Ashton",
 }
 
 module.exports = {

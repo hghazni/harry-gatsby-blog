@@ -2,17 +2,18 @@ import React from "react"
 import { navigate } from "gatsby"
 import { IPostRequest } from "./../../interfaces/requests.interface"
 import scss from './Header.module.scss';
+import HeaderMenu from '../Header/Menu/';
 
 import Socials from "./../Socials"
 
 export default ({ siteMetadata }: IPostRequest["site"]) => {
   return (
-    <header id="header">
+    <header className={scss.header}>
       <h1 onClick={() => navigate("/")}>{siteMetadata.title}</h1>
-      <span>
+      <div>
         <Socials siteMetadata={siteMetadata} />
-      </span>
-      <h1 className={scss.test}>test lolololol</h1>
+        <HeaderMenu />
+      </div>
     </header>
   )
 }
