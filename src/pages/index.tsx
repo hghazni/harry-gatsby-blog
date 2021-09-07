@@ -6,6 +6,7 @@ import { IHomeRequest } from "./../interfaces/requests.interface"
 import Layout from "./../components/Layout"
 import About from "./../components/About"
 import Posts from "./../components/Posts"
+import Hero from "../components/Hero"
 
 const IndexPage = ({ data }: { data: IHomeRequest }) => {
   // Helper to organize useful data in request
@@ -27,8 +28,9 @@ const IndexPage = ({ data }: { data: IHomeRequest }) => {
 
   return (
     <Layout siteMetadata={siteMetadata} title="Homepage">
-      <About authorPicture={authorPicture} siteMetadata={siteMetadata} />
-      <Posts content={content} />
+      {/*<About authorPicture={authorPicture} siteMetadata={siteMetadata} />*/}
+      {/*<Posts content={content} />*/}
+      <Hero />
     </Layout>
   )
 }

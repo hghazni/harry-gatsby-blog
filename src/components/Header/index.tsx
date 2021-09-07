@@ -11,7 +11,7 @@ export default ({ siteMetadata }: IPostRequest["site"]) => {
     <header className={scss.header}>
       <h1 onClick={() => navigate("/")}>{siteMetadata.title}</h1>
       <div>
-        <Socials siteMetadata={siteMetadata} />
+        {/*<Socials siteMetadata={siteMetadata} />*/}
         <HeaderMenu />
       </div>
     </header>
