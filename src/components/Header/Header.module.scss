@@ -1,4 +1,5 @@
 @import '../../../src/assets/styles/variables.scss';
+@import '../../../src/assets/styles/typography.scss';
 
 .header {
   display: flex;
@@ -12,4 +13,9 @@
   max-width: $pageWidthMax;
   margin: auto;
   z-index: 2;
+}
+
+.logo {
+  font-family: $bodyFont;
+  font-weight: 400;
 }

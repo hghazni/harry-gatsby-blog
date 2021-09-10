@@ -1,13 +1,19 @@
 import React from "react";
 import scss from './Hero.module.scss';
+import spacerooster from '../../assets/images/spacerooster.png';
 
-const Hero = (props) => {
+const Hero = (props: { className?: "" | undefined; }) => {
   const {className = ""} = props;
   return (
     <div className={`${scss.hero} ${className}`}>
       <div className={scss.content}>
-      <h1 className={scss.title}>Hey It's Harry!</h1>
-      <h2 style={{color: "white"}}>I'm a <span className={scss.developer}>UI Developer</span>, <span className={scss.youtuber}>YouTuber</span> and <span className={scss.blogger}>Blogger</span></h2>
+      <div className={scss.heroImage}>
+        <img src={spacerooster} alt="Space Rooster" />
+      </div>
+       <div className={scss.heroInnerText}>
+       <h1 className={scss.title}>Hey It's Harry!<span>👋</span></h1>
+        <h2 className={scss.subTitle} style={{color: "white"}}>I'm a <span className={scss.developer}>UI Developer</span>, <span className={scss.youtuber}>YouTuber</span> and <span className={scss.blogger}>Blogger</span></h2>
+       </div>
     </div>
     </div>
   )

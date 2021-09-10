@@ -1,4 +1,5 @@
 @import '../../../src/assets/styles/variables';
+@import '../../../src/assets/styles/typography';
 
 .footer {
   display: flex;
@@ -8,4 +9,5 @@
 
 .copyright {
   color: white;
+  font-family: $bodyFont;
 }
