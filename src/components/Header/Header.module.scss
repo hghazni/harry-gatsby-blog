@@ -1,10 +1,15 @@
+@import '../../../src/assets/styles/variables.scss';
+
 .header {
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    align-items: baseline;
-    background-color: transparent;
-    width: 100%;
-    height: 100px;
-    color: white;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: baseline;
+  background-color: transparent;
+  width: 100%;
+  height: 100px;
+  color: white;
+  max-width: $pageWidthMax;
+  margin: auto;
+  z-index: 2;
 }

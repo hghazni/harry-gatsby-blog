@@ -1,5 +1,9 @@
+@import '../../../src/assets/styles/variables';
+
 .footer {
   display: flex;
+  max-width: $pageWidthMax;
+  margin: auto;
 }
 
 .copyright {
