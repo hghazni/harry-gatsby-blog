@@ -24,13 +24,14 @@
   font-weight: 600;
   font-size: 30px;
   margin: 0;
-  color: cornflowerblue;
+  color: mediumvioletred;
 
   &:hover {
     cursor: pointer;
+    color: lighten(mediumvioletred, 30%);
   }
 
   &:focus {
-    border: 1px solid lighten(cornflowerblue, 20%);
+    border: 1px solid lighten(mediumvioletred, 20%);
   }
 }

@@ -7,12 +7,14 @@ import Socials from "./../Socials"
 export default ({ siteMetadata }: IHomeRequest["site"]) => {
   return (
     <footer className={scss.footer}>
+      <div className={scss.inner}>
       <p className={scss.copyright}>
         &copy; {new Date().getFullYear()} {siteMetadata.author}
       </p>
       <span id="footer-socials">
         {/*<Socials siteMetadata={siteMetadata} />*/}
       </span>
+      </div>
     </footer>
   )
 }

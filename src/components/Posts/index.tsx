@@ -11,7 +11,7 @@ export default ({ content }: { content: IPostsContent[] }) => {
   const [isUICol, setIsUICol] = useState<Boolean>(true)
   return (
     <>
-      <div id="ui-posts-selector">
+      {/* <div id="ui-posts-selector">
         <div>
           <a onClick={() => setIsUICol(false)}>
             <FaList />
@@ -20,10 +20,10 @@ export default ({ content }: { content: IPostsContent[] }) => {
             <FaGripVertical />
           </a>
         </div>
-      </div>
+      </div> */}
       <section className={scss.posts} id="posts">
         <LastContent content={content.slice(0, 4)} isUICol={isUICol} />
-        <OldContent content={content.slice(4)}  title={undefined} />
+        {/* <OldContent content={content.slice(4)}  title={undefined} /> */}
       </section>
     </>
   )

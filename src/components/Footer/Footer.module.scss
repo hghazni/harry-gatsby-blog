@@ -2,10 +2,15 @@
 @import '../../../src/assets/styles/typography';
 
 .footer {
+  background-color: #162127;
+  margin-top: 40px;
+}
+
+.inner {
   display: flex;
   max-width: $pageWidthMax;
   margin: auto;
-  background-color: #162127;
+  padding: 50px 0;
 }
 
 .copyright {
