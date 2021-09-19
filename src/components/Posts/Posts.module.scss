@@ -1,0 +1,21 @@
+.posts {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 80rem;
+    margin: auto;
+}
+
+.post {
+    display: block;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: #4e5c68;
+    width: calc(20% - 10px);
+    color: white;
+}
+
+.oldPosts {
+    display: flex;
+}

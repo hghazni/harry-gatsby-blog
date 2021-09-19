@@ -1,6 +1,7 @@
 import React from "react"
 import { IPostsContent } from "./../../interfaces/data.interface"
 import { GatsbyImageProps } from "gatsby-image/index"
+import scss from './Posts.module.scss';
 
 import { Link } from "gatsby"
 import Img from "gatsby-image"
@@ -15,7 +16,7 @@ export default ({
   <>
     {content.map((post: IPostsContent, i: number) => {
       return isUICol ? (
-        <Link to={post.slug} className="col-md-6" key={i}>
+        <Link to={post.slug} className={scss.post} key={i}>
           <h3>{post.title}</h3>
           <div></div>
           <Img

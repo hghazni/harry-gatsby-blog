@@ -29,8 +29,8 @@ const IndexPage = ({ data }: { data: IHomeRequest }) => {
   return (
     <Layout siteMetadata={siteMetadata} title="Homepage">
       {/*<About authorPicture={authorPicture} siteMetadata={siteMetadata} />*/}
-      {/*<Posts content={content} />*/}
       <Hero />
+      <Posts content={content} />
     </Layout>
   )
 }

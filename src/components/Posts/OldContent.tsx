@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import { IPostsContent } from "./../../interfaces/data.interface"
+import scss from './Posts.module.scss';
 
 import { Link } from "gatsby"
 import { FaAngleDoubleLeft, FaAngleDoubleRight } from "react-icons/fa"
@@ -14,12 +15,12 @@ export default ({
   const [slice, setSlice] = useState<number[]>([0, 2])
 
   return (
-    <div id="old-posts">
+    <div className={scss.oldPosts} id="old-posts">
       <h3>{title || "Older posts"}</h3>
       <div id="old-posts-content">
         {content.slice(slice[0], slice[1]).map((post, i: number) => {
           return (
-            <Link to={post.slug} className="col-md-6" key={i}>
+            <Link to={post.slug} className={scss.post} key={i}>
               <div className="posts-top">
                 <h5>{post.title}</h5>
                 <p className="post-date">{post.date}</p>

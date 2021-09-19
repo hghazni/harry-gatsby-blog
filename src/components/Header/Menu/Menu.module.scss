@@ -7,6 +7,7 @@
 .list {
     display: flex;
     list-style-type: none;
+    margin: 0;
 }
 
 .item {
@@ -16,12 +17,13 @@
 
 .link {
   color: white;
-  font-size: 20px;
+  font-size: 18px;
+  font-weight: 500;
   text-decoration: none;
   font-family: $bodyFont;
 
   &:hover {
-      color: darken(white, 30%);
+      color: cornflowerblue;
       text-decoration: underline;
   }
 }
