@@ -22,9 +22,12 @@
 .logo {
   font-family: $bodyFont;
   font-weight: 600;
-  font-size: 30px;
+  font-size: 35px;
   margin: 0;
-  color: mediumvioletred;
+  background: #404460;
+  color: white;
+  padding: 5px;
+  border-bottom: 4px solid #fa00e4;
 
   &:hover {
     cursor: pointer;
