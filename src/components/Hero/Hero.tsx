@@ -11,8 +11,9 @@ const Hero = (props: { className?: "" | undefined; }) => {
         {/* <img src={spacerooster} alt="Space Rooster" /> */}
       </div>
        <div className={scss.heroInnerText}>
-       <h1 className={scss.title}>UI / Accessibility Engineer</h1>
-        <h2 className={scss.subTitle} style={{color: "white"}}>I'm a <span className={scss.developer}>UI Developer</span>, <span className={scss.youtuber}>YouTuber</span> and <span className={scss.blogger}>Blogger</span></h2>
+        <h1 className={scss.subTitle}></h1>
+        <h1 className={scss.title}>UI / Accessibility Engineer</h1>
+        <h2 className={scss.subTitle}>I'm a <span className={scss.developer}>UI Developer</span>, <span className={scss.youtuber}>YouTuber</span> and <span className={scss.blogger}>Blogger</span></h2>
        </div>
     </div>
     </div>

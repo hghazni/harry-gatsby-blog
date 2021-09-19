@@ -16,6 +16,7 @@
     color: white;
     margin: auto;
     z-index: 2;
+    padding: 0 $base-spacing;
   }
 }
 
@@ -28,6 +29,9 @@
   color: white;
   padding: 5px;
   border-bottom: 4px solid #fa00e4;
+  letter-spacing: 20px;
+  text-align: start;
+  width: 130px;
 
   &:hover {
     cursor: pointer;

@@ -1,7 +1,9 @@
 @import '../../../assets/styles/typography';
+@import '../../../assets/styles/variables';
 
 .menu {
     display: flex;
+    margin-right: $base-spacing;
 }
 
 .list {
@@ -17,7 +19,7 @@
 
 .link {
   color: white;
-  font-size: 18px;
+  font-size: 24px;
   font-weight: 500;
   text-decoration: none;
   font-family: $bodyFont;
