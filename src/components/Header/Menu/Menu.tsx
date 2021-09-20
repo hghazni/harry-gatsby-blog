@@ -1,16 +1,16 @@
-import { HeaderMenuProps } from "./Menu.types";
 import scss from './Menu.module.scss';
 import React from 'react';
+import { Link } from 'gatsby';
+import About from '../../About';
 
-const HeaderMenu: React.FC<HeaderMenuProps> = (props: HeaderMenuProps): any => {
-    const { className = ""  } = props;
+const HeaderMenu = () => {
 
     return (
         <div className={scss.menu}>
             <ul className={scss.list}>
-                <li className={scss.item}><a className={scss.link} href="#About">About</a></li>
-                <li className={scss.item}><a className={scss.link} href="#Contact">Contact</a></li>
-                <li className={scss.item}><a className={scss.link} href="#Blog">Blog</a></li>
+                <li className={scss.item}><Link to={"/About"} className={scss.link}>About</Link></li>
+                <li className={scss.item}><Link to={"/Contact"} className={scss.link}>Contact</Link></li>
+                <li className={scss.item}><Link to={"/Blog"} className={scss.link}>Blog</Link></li>
             </ul>
         </div>
     )
