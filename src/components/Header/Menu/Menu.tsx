@@ -1,7 +1,7 @@
 import scss from './Menu.module.scss';
 import React from 'react';
-import { Link } from 'gatsby';
 import About from '../../About';
+import { Link } from 'react-router-dom';
 
 const HeaderMenu = () => {
 

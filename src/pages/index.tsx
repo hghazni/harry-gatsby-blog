@@ -1,12 +1,15 @@
-import React from "react"
-import "./../assets/styles/style.scss"
-import { graphql } from "gatsby"
-import { IHomeRequest } from "./../interfaces/requests.interface"
+import React from "react";
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import "./../assets/styles/style.scss";
+import { graphql } from "gatsby";
+import { IHomeRequest } from "./../interfaces/requests.interface";
 
 import Layout from "./../components/Layout"
-import About from "./../components/About"
 import Posts from "./../components/Posts"
 import Hero from "../components/Hero"
+import Blog from "./Blog";
+import Contact from "./Contact";
+import About from "./About";
 
 const IndexPage = ({ data }: { data: IHomeRequest }) => {
   // Helper to organize useful data in request
@@ -24,14 +27,21 @@ const IndexPage = ({ data }: { data: IHomeRequest }) => {
     return { title, timeToRead, date, excerpt, slug, childImageSharp }
   })
   const { siteMetadata } = data.site
-  const authorPicture = data.authorPicture.childImageSharp
 
   return (
-    <Layout siteMetadata={siteMetadata} title="Homepage">
-      {/*<About authorPicture={authorPicture} siteMetadata={siteMetadata} />*/}
-      <Hero />
-      <Posts content={content} />
-    </Layout>
+    <BrowserRouter>
+      <Layout siteMetadata={siteMetadata} title="Homepage">
+        {/*<About authorPicture={authorPicture} siteMetadata={siteMetadata} />*/}
+        <Hero />
+        <Switch>
+          <Route exact path="/" />
+          <Route path="/about" component={About} />
+          <Route path="/blog" component={Blog} />
+          <Route path="/contact" component={Contact} />
+        </Switch>
+        <Posts content={content} />
+      </Layout>
+    </BrowserRouter>
   )
 }
 
