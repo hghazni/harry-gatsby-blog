@@ -4,22 +4,22 @@ import scss from './Layout.module.scss';
 import Head from "./../Head";
 import Header from "./../Header";
 import Footer from "./../Footer";
+import { LayoutProps } from "./Layout.types";
 
-export default ({
-  children,
-  siteMetadata,
-  title,
-}: {
-  children: any
-  siteMetadata: ISiteMetadata
-  title: string
-}) => (
-  <div className={scss.layout}>
-    <Head siteMetadata={siteMetadata} pageName={title}>
+
+const Layout = (props: LayoutProps) => {
+const { title, children } = props;
+
+  return (
+    <div className={scss.layout}>
+    <Head pageName={title}>
       <title>{title}</title>
     </Head>
-    <Header siteMetadata={siteMetadata} />
+    <Header/>
     {children}
-    <Footer siteMetadata={siteMetadata} />
+    <Footer />
   </div>
-)
+  )
+}
+
+export default Layout;

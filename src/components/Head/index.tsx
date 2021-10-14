@@ -1,16 +1,12 @@
 import React from "react"
-import { IHomeRequest } from "./../../interfaces/requests.interface"
-
 import { Helmet } from "react-helmet"
+import { HeadProps } from "./Head.types"
 
-export default ({
-  pageName,
-  siteMetadata: { description, author, siteUrl, themeColor },
-}: {
-  pageName: string
-  siteMetadata: IHomeRequest["site"]["siteMetadata"]
-}) => (
-  <Helmet htmlAttributes={{ lang: "en" }}>
+
+const Head = (props: HeadProps) => {
+  const { author = "me", pageName, siteUrl = "/", description = "a site about me", themeColor } = props;
+  return (
+    <Helmet htmlAttributes={{ lang: "en" }}>
     <meta charSet="utf-8" />
     <title>
       {author} | {pageName}
@@ -20,4 +16,7 @@ export default ({
     <meta name="theme-color" content={themeColor || "#fff"} />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
   </Helmet>
-)
+  )
+}
+
+export default Head;
