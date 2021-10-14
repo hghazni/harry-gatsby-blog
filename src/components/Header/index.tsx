@@ -6,7 +6,7 @@ import HeaderMenu from '../Header/Menu/';
 
 import Socials from "./../Socials"
 
-export default ({ siteMetadata }: IPostRequest["site"]) => {
+export default () => {
   return (
     <header className={scss.header}>
       <div className={scss.content}>
