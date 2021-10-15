@@ -12,13 +12,15 @@ const { title, children } = props;
 
   return (
     <div className={scss.layout}>
-    <Head pageName={title}>
-      <title>{title}</title>
-    </Head>
-    <Header/>
-    {children}
-    <Footer />
-  </div>
+      <Head pageName={title}>
+        <title>{title}</title>
+      </Head>
+      <Header/>
+      <main className={scss.main}>
+        {children}
+      </main>
+      <Footer />
+    </div>
   )
 }
 
