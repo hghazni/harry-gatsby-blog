@@ -2,6 +2,9 @@
 @import '../../../src/assets/styles/typography';
 
 .footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   background-color: #162127;
   margin-top: 40px;
 }
