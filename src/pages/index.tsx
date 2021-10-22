@@ -1,5 +1,4 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import "./../assets/styles/style.scss";
 import { graphql } from "gatsby";
 import { IHomeRequest } from "./../interfaces/requests.interface";
