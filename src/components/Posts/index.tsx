@@ -22,7 +22,7 @@ export default ({ content }: { content: IPostsContent[] }) => {
         </div>
       </div> */}
       <section className={scss.posts} id="posts">
-        <LastContent content={content.slice(0, 4)} isUICol={isUICol} />
+        <LastContent content={content.slice(0, 8)} isUICol={isUICol} />
         {/* <OldContent content={content.slice(4)}  title={undefined} /> */}
       </section>
     </>

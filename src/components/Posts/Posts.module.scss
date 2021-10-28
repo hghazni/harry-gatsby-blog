@@ -1,7 +1,8 @@
 @import '../../assets/styles/typography';
 
 .posts {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 300px);
     justify-content: space-between;
     flex-wrap: wrap;
     max-width: 80rem;
@@ -13,22 +14,27 @@
     border: 1px solid transparent;
     border-radius: 8px;
     padding: 10px;
-    // background-color: #4e5c68;
-    width: calc(20% - 10px);
+    width: 200px;
+    width: 18rem;
     color: white;
     transition: all .2s;
     text-decoration: none;
+    margin-bottom: 24px;
 
     h3, p {
         font-family: $bodyFont;
     }
 
     &:hover {
-        transform: scale(1.1);
-        border: 2px solid mediumvioletred;
+        transform: scale(1.025);
     }
 }
 
 .oldPosts {
     display: flex;
+}
+
+.card {
+    padding: 10px;
+    height: 100%;
 }

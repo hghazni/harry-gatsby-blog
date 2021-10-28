@@ -18,7 +18,7 @@ export default ({
     {content.map((post: IPostsContent, i: number) => {
       return isUICol ? (
         <Link to={post.slug} className={scss.post} key={i}>
-          <Card variant={'outlined'}>
+          <Card variant={'outlined'} className={scss.card}>
             <h3>{post.title}</h3>
             <Img
               className="post-image"

@@ -1,19 +1,20 @@
 import React from "react";
 import scss from './Hero.module.scss';
-import spacerooster from '../../assets/images/spacerooster.png';
 
 const Hero = (props: { className?: "" | undefined; }) => {
   const {className = ""} = props;
   return (
     <div className={`${scss.hero} ${className}`}>
       <div className={scss.content}>
-      <div className={scss.heroImage}>
-        {/* <img src={spacerooster} alt="Space Rooster" /> */}
-      </div>
+      <div className={scss.heroImage}></div>
        <div className={scss.heroInnerText}>
-        <h1 className={scss.subTitle}>Hey I'm Harry a,</h1>
-        <h1 className={scss.title}>UI / Accessibility Engineer,</h1>
-        <h2 className={scss.subTitle}><span className={scss.youtuber}>YouTuber</span> and <span className={scss.blogger}>Blogger</span>.</h2>
+        <h1 className={scss.title}>Helping people make the world a better place through considered UI, empathy and teaching.</h1>
+        <h2 className={scss.subTitle}></h2>
+        <div className={scss.heroTags}>
+          <button className={`${scss.tag} ${scss.uidev}`}>UI Developer</button>
+          <button className={`${scss.tag} ${scss.a11yeng}`}>Accessibility Engineer</button>
+          <button className={`${scss.tag} ${scss.youtuber}`}>YouTuber</button>
+        </div>
        </div>
     </div>
     </div>

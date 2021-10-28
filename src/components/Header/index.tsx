@@ -10,7 +10,7 @@ export default () => {
   return (
     <header className={scss.header}>
       <div className={scss.content}>
-      <h1 role="button" tabIndex={0} className={scss.logo} onClick={() => navigate("/")}>HEGA</h1>
+      <h1 role="button" tabIndex={0} className={scss.logo} onClick={() => navigate("/")}>Harry G.Ashton</h1>
       <div>
         {/*<Socials siteMetadata={siteMetadata} />*/}
         <HeaderMenu />
