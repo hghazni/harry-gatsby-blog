@@ -6,7 +6,8 @@ const About = () => {
     return (
         <Layout title="About">
             <div className={scss.about}>
-                About
+                <h1 className={scss.title}>About</h1>
+                <p className={scss.text}>Something about me</p>
             </div>
         </Layout>
     )

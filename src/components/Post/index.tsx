@@ -6,7 +6,7 @@ import { GatsbyImageProps } from "gatsby-image/index"
 
 import Img from "gatsby-image"
 import Layout from './../Layout'
-import About from "./../About"
+import About from "../../pages/About"
 import OlderPosts from "./../Posts/OldContent"
 
 export default ({ data }: { data: IPostRequest }) => {

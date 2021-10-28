@@ -1,5 +1,4 @@
 import React from "react";
-import { ISiteMetadata } from "./../../interfaces/requests.interface";
 import scss from './Layout.module.scss';
 import Head from "./../Head";
 import Header from "./../Header";

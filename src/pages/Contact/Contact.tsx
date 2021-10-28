@@ -6,7 +6,8 @@ const Contact = () => {
     return (
         <Layout title="Contact">
             <div className={scss.contact}>
-                <p>Contact</p>
+            <h1 className={scss.title}>Contact</h1>
+                <p className={scss.text}>Contact me</p>
             </div>
         </Layout>
     )
