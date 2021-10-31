@@ -1,4 +1,5 @@
-@import '../../assets/styles/typography';
+@import '../../assets/styles/typography.scss';
+@import '../../assets/styles/variables.scss';
 
 .posts {
     display: grid;
@@ -35,5 +36,13 @@
 
 .card {
     padding: 10px;
+    height: 100%;
+    background-size: cover;
+    font-family: $bodyFont;
+}
+
+.thumbnail {
+    display: block;
+    width: 100%;
     height: 100%;
 }
