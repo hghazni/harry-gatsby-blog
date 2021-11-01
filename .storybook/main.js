@@ -8,17 +8,20 @@ module.exports = {
       name: '@storybook/preset-scss',
       options: {
         cssLoaderOptions: {
-           modules: true,
-           localIdentName: '[name]__[local]--[hash:base64:5]',
+          modules: true,
         }
       }
     },
-    "@storybook/addon-links",
     "@storybook/addon-essentials",
+    "@storybook/addon-docs",
     "@storybook/addon-controls",
-    "@storybook/addon-viewport",
-    "@storybook/addon-a11y",
+    "storybook-dark-mode",
+    "@storybook/addon-links",
     "storybook-addon-designs",
-    "storybook-dark-mode"
+    "addon-screen-reader",
+    "@storybook/addon-a11y",
+    "@storybook/addon-backgrounds",
+    "@storybook/addon-viewport",
+    "@storybook/addon-storysource",
   ]
 }
