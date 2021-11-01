@@ -9,6 +9,7 @@ const Card = (props: CardProps) => {
 
     return (
         <button
+        tabIndex={-1}
         onMouseEnter={() => isHovered(true)}
         onMouseLeave={() => isHovered(false)}
         className={`${scss.card} ${className}`} 

@@ -1,13 +1,13 @@
-import React from "react"
-import { graphql } from "gatsby"
-import "./../../assets/styles/style.scss"
-import { IPostRequest } from "./../../interfaces/requests.interface"
-import { GatsbyImageProps } from "gatsby-image/index"
+import React from "react";
+import { graphql } from "gatsby";
+import "./../../assets/styles/style.scss";
+import { IPostRequest } from "./../../interfaces/requests.interface";
+import { GatsbyImageProps } from "gatsby-image/index";
 
-import Img from "gatsby-image"
-import Layout from './../Layout'
-import About from "../../pages/About"
-import OlderPosts from "./../Posts/OldContent"
+import Img from "gatsby-image";
+import Layout from './../Layout';
+import OlderPosts from "./../Posts/OldContent";
+import scss from './Post.module.scss';
 
 export default ({ data }: { data: IPostRequest }) => {
   // Helper to organize useful data in request
@@ -33,14 +33,11 @@ export default ({ data }: { data: IPostRequest }) => {
   return (
     <Layout siteMetadata={siteMetadata} title={title}>
       <section id="post">
-        <h1 id="post-title">{title}</h1>
-        <div id="cover-image">
+        <h1 className={scss.title}>{title}</h1>
+        <div className={scss.coverImage}>
           <Img {...(imgProps as GatsbyImageProps)} />
         </div>
-        <div id="post-content" dangerouslySetInnerHTML={{ __html: html }} />
-      </section>
-      <section id="about-post">
-        <About siteMetadata={siteMetadata} authorPicture={authorPicture} />
+        <div className={scss.content} dangerouslySetInnerHTML={{ __html: html }} />
       </section>
       <section id="post-old-posts">
         <OlderPosts content={content} title="Newest posts" />

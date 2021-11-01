@@ -1,0 +1,19 @@
+@import '../../assets/styles/typography';
+
+.title {
+    color: white;
+    font-size: 50px;
+}
+
+.coverImage {
+    max-height: 300px;
+
+    img {
+        max-height: 300px;
+    }
+}
+
+.content {
+    color: white;
+    font-family: $robotoFont;
+}

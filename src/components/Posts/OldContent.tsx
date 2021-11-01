@@ -17,7 +17,7 @@ export default ({
   return (
     <div className={scss.oldPosts} id="old-posts">
       <h3>{title || "Older posts"}</h3>
-      <div id="old-posts-content">
+      <div id="old-posts-content" className={scss.oldPostsContent}>
         {content.slice(slice[0], slice[1]).map((post, i: number) => {
           return (
             <Link to={post.slug} className={scss.post} key={i}>

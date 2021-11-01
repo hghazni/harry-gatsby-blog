@@ -64,7 +64,19 @@
   margin-right: 8px;
   margin-top: 32px;
   font-size: 24px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
+
+  &:hover {
+    cursor: pointer;
+    transition: all 0.25s ease-in-out;
+    transform: scale(1.01);
+
+  }
+
+  &:focus {
+    transition: all 0.25s ease-in-out;
+    border: 2px inset white;
+  }
 
   &:last-of-type {
     margin-right: 0;
