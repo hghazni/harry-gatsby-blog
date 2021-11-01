@@ -15,7 +15,7 @@ const Card = (props: CardProps) => {
         style={{backgroundImage: `url(${thumbnail})`}}>
             <div className={scss.content}>
                 <h2 className={scss.title}>{title}</h2>
-                {hover && (<p className={scss.description}>{description}</p>)}
+                <p className={`${scss.description} ${!hover ? scss.fadeOut : scss.fadeIn}`}>{description}</p>)
                 <p className={scss.date}>{date}</p>
                 <p className={scss.timeToRead}>{timeToRead} min to read</p>
             </div>

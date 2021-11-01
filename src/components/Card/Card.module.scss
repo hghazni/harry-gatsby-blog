@@ -19,7 +19,40 @@
 }
 
 .description {
-    animation: all 1s ease-in-out;
+    opacity: 0;
+
+    &.fadeOut {
+        animation: fadeOut 0.15s ease-out;
+    }
+
+    &.fadeIn {
+        opacity: 1;
+        animation: fadeIn 0.25s ease-in;
+    }
+
+/* Move it (define the animation) */
+@keyframes fadeIn {
+    0%   { 
+    transform: translateY(60%);
+    opacity: 0;		
+    }
+    100% { 
+    transform: translateY(0%); 
+    opacity: 1;
+    }
+}
+
+/* Move it (define the animation) */
+@keyframes fadeOut {
+    100%   { 
+    transform: translateY(60%);
+    opacity: 1;	
+    }
+    0% { 
+    transform: translateY(0%);
+    opacity: 0;
+    }
+}
 }
 
 .content {
